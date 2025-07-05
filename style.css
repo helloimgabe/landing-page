@@ -17,15 +17,32 @@ body,
     display: flex;
     flex-direction: column;
 }
-/* Header section */
+
+.contentwrapper {
+      gap: 100px;
+      display: flex;
+      max-width: 1000px;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+}
+
+/* NAVBAR SECTION */
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #1F2937;
+    padding: 25px 0px 50px;
 }
-
+.navbarcontent {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
 header {
     font-size: 24px;
     color: #f9faf8;
@@ -36,44 +53,75 @@ a {
     display: flex;
     text-decoration: none;
     list-style: none;
-    gap: 15px;
+    gap: 20px;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-/* Hero section */
+/* HERO SECTION */
 
 .herocontainer {
     display: flex;
-    flex: 1;
-    flex-direction: row;
+    justify-content: center;
+    height: 40vh;
     background-color: #1F2937;
-    color: #f9faf8;
-    border: 2px solid cyan;
+    align-items: center;
 }
 
-h1 {
+#heroimg {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+#welcometext {
     font-size: 48px;
+    color: #f9faf8;
     font-weight: 900;
 }
 
-.herotext > h2 {
-    font-size: 28px;
+#subwelcometext {
+    font-size: 18px;
     color: #E5E7EB;
-    font-weight: 100;
 }
 
-/* Favorite photos section */
+/* HERO SIGNUP BUTTON */
+
+#herobutton {
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 5px 30px;
+    border: solid 2px #3882F6;;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#herobutton:hover{
+    background-color: #3068c4;
+    border-radius: 8px;
+    padding: 5px 30px;
+    border: solid 2px #3068c4;
+    color: white;
+    font-weight: 500;
+}
+
+#herobutton:active {
+    background-color:#3882F6;
+    border-radius: 8px;
+    padding: 5px 30px;
+    border: solid 2px #3882F6;
+    color: white;
+    font-weight: 500;
+}
+
+/* FAVORITE PHOTO SECTION */
 
 .picturescontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding: 100px;
-    gap: 20;
-    border: solid rgb(211, 22, 22);
 }
 
 #infoheader {
@@ -91,7 +139,7 @@ h1 {
     display: flex;
     padding: 25px;
     justify-content: center;
-    color: #a4a6aa;
+    color: #77797b;
 }
 
 .card {
@@ -104,7 +152,11 @@ h1 {
     padding: 25px;
 }
 
-/* Quote section */
+.card > p {
+    padding: 5px;
+}
+
+/* CRINGE QUOTE SECTION */
 
 .quotecontainer {
     padding: 100px;
@@ -120,7 +172,6 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    background-color: burlywood;
     padding: 100px;;
     width: 1000px;
 }
@@ -129,9 +180,10 @@ h1 {
     color: #000000;
     font-size: 75%;
     font-style: normal;
+    text-decoration: underline;
 }
 
-/* Signup section */
+/* SIGNUP SECTION */
 
 .signupcontainer {
     background-color: #3882F6;
@@ -157,7 +209,7 @@ h1 {
     color: #E5E7EB;
 }
 
-/* Call to action sign up button */
+/* CTA SIGNUP BUTTON */
 
 #signup {
     background-color: #3882F6;
@@ -186,7 +238,7 @@ h1 {
     font-weight: 500;
 }
 
-/* Footer */
+/* FOOTER */
 
 .footer {
     display: flex;
